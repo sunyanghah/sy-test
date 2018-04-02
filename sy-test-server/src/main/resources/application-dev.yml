@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/world
+    username: root
+    password: qwerdf
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.254.23.58:8761/eureka/
+  instance:
+    prefer-ip-address: true

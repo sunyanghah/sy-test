@@ -1,0 +1,12 @@
+server:
+  port: 7311
+
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://10.254.23.58:8761/eureka/
+  instance:
+    prefer-ip-address: true

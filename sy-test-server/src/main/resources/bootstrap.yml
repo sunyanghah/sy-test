@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sy-test-server
+  profiles:
+    active: release

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sy-test-ui
+  profiles:
+    active: dev
