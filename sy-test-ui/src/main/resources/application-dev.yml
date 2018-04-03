@@ -1,6 +1,15 @@
 server:
   port: 7311
 
+spring:
+  thymeleaf:
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    content-type: text/html
+    cache: false
+    template-resolver-order:
 
 eureka:
   client:
