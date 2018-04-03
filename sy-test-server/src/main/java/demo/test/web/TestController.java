@@ -1,6 +1,7 @@
 package demo.test.web;
 
 import demo.test.application.TestApplication;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,7 @@ import java.util.Map;
  * @author dell
  */
 @RestController
+@Slf4j
 public class TestController {
 
     @Autowired
@@ -26,6 +28,7 @@ public class TestController {
         for (Map<String,Object> map : list){
             rt += map.get("name")+",";
         }
+        log.info("========================================={}",rt);
         return rt;
     }
 }
