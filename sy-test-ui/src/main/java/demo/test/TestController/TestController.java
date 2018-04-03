@@ -1,8 +1,8 @@
-package com.test.TestController;
+package demo.test.TestController;
 
 
-import com.test.InAddUserDto;
-import com.test.OutAddUserDto;
+import demo.test.InAddUserDto;
+import demo.test.OutAddUserDto;
 import demo.test.TestClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,7 +35,7 @@ public class TestController {
         OutAddUserDto outAddUserDto = new OutAddUserDto();
         System.out.println("---------------"+inAddUserDto.getUserName()+"---------------"+inAddUserDto.getPassWord());
         String ss = testClient.test();
-        outAddUserDto.setResult("this is success");
+        outAddUserDto.setResult(ss);
         return outAddUserDto;
     }
 

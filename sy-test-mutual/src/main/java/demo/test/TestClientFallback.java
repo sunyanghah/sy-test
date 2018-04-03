@@ -9,6 +9,7 @@ import javax.inject.Named;
 @Named
 public class TestClientFallback implements TestClient {
 
+
     @Override
     public String test() throws Exception {
         return null;
