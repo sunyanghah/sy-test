@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication(scanBasePackages={"demo.test"})
-@EnableEurekaClient
 @EnableFeignClients
+@EnableEurekaClient
 public class SyTestUiApp {
 
 	public static void main(String[] args) {

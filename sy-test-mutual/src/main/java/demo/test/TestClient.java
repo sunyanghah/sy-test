@@ -1,11 +1,9 @@
 package demo.test;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.inject.Named;
 
 /**
  * Created by dell on 2018/3/31.
