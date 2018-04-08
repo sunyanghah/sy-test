@@ -19,3 +19,9 @@ eureka:
       defaultZone: http://10.254.23.58:8761/eureka/
   instance:
     prefer-ip-address: true
+
+
+#请求处理的超时时间
+ribbon.ReadTimeout: 120000
+#请求连接的超时时间
+ribbon.ConnectTimeout: 30000
