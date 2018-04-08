@@ -32,10 +32,10 @@ public class TestController {
     @RequestMapping(value = "/test/addUser",method = RequestMethod.POST)
     @ResponseBody
     public OutAddUserDto addUser(@RequestBody InAddUserDto inAddUserDto) throws Exception{
-        OutAddUserDto outAddUserDto = new OutAddUserDto();
-        System.out.println("---------------"+inAddUserDto.getUserName()+"---------------"+inAddUserDto.getPassWord());
-        String ss = testClient.test();
-        outAddUserDto.setResult(ss);
+        OutAddUserDto outAddUserDto;
+//        System.out.println("---------------"+inAddUserDto.getUserName()+"---------------"+inAddUserDto.getPassWord());
+        outAddUserDto = testClient.test();
+        outAddUserDto.setResult(outAddUserDto.getResult());
         return outAddUserDto;
     }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.test</groupId>
+    <artifactId>sy-test-parent</artifactId>
+    <version>0.0.1.SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>sy-test-parent</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>sy-test-mutual</module>
+        <module>sy-test-ui</module>
+        <module>sy-test-dto</module>
+        <module>sy-test-server</module>
+
+    </modules>
+</project>

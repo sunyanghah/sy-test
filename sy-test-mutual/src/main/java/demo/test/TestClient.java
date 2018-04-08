@@ -18,5 +18,5 @@ public interface TestClient {
      * @throws Exception
      */
     @RequestMapping(value = "/sy/test",method = RequestMethod.GET)
-    String test() throws Exception;
+    OutAddUserDto test() throws Exception;
 }

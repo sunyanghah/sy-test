@@ -1,5 +1,6 @@
 package demo.test.web;
 
+import demo.test.OutAddUserDto;
 import demo.test.application.TestApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +23,15 @@ public class TestController {
     private TestApplication testApplication;
 
     @RequestMapping(value = "/sy/test",method = RequestMethod.GET)
-    public String test() throws Exception{
+    public OutAddUserDto test() throws Exception{
+        OutAddUserDto outAddUserDto = new OutAddUserDto();
         List<Map<String,Object>> list = testApplication.test();
         String rt = "";
         for (Map<String,Object> map : list){
             rt += map.get("name")+",";
         }
         log.info("========================================={}",rt);
-        return rt;
+        outAddUserDto.setResult(rt);
+        return outAddUserDto;
     }
 }
