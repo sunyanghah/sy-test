@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
 
     <name>sy-test-parent</name>
-    <url>http://maven.apache.org</url>
+    <!--<url>http://maven.apache.org</url>-->
 
 
 
