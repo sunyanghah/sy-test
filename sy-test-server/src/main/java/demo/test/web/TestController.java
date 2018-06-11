@@ -34,4 +34,12 @@ public class TestController {
         outAddUserDto.setResult(rt);
         return outAddUserDto;
     }
+
+    @RequestMapping(value = "/sy/test2",method = RequestMethod.POST)
+    public OutAddUserDto test2() throws Exception{
+        OutAddUserDto outAddUserDto = new OutAddUserDto();
+        log.info("========================================={}","dsfsddfsddfs");
+        outAddUserDto.setResult("dsfsfsdfsfsddfs");
+        return outAddUserDto;
+    }
 }
