@@ -40,6 +40,22 @@
         </dependencies>
     </dependencyManagement>
 
+    <repositories>
+        <repository>
+            <id>85ido-repos</id>
+            <name>85ido public repository</name>
+            <url>http://maven.85ido.com/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <modules>
         <module>sy-test-mutual</module>
         <module>sy-test-ui</module>
