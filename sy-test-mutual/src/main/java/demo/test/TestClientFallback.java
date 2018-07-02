@@ -14,4 +14,9 @@ public class TestClientFallback implements TestClient {
     public OutAddUserDto test() throws Exception {
         return null;
     }
+
+    @Override
+    public OutAddUserDto test2() throws Exception {
+        return null;
+    }
 }

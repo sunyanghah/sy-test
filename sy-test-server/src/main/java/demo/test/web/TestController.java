@@ -24,6 +24,7 @@ public class TestController {
 
     @RequestMapping(value = "/sy/test",method = RequestMethod.GET)
     public OutAddUserDto test() throws Exception{
+        log.info("=========================================in1=========");
         OutAddUserDto outAddUserDto = new OutAddUserDto();
         List<Map<String,Object>> list = testApplication.test();
         String rt = "";
@@ -37,9 +38,15 @@ public class TestController {
 
     @RequestMapping(value = "/sy/test2",method = RequestMethod.POST)
     public OutAddUserDto test2() throws Exception{
+        log.info("=========================================in2=========");
         OutAddUserDto outAddUserDto = new OutAddUserDto();
-        log.info("========================================={}","dsfsddfsddfs");
-        outAddUserDto.setResult("dsfsfsdfsfsddfs");
+        List<Map<String,Object>> list = testApplication.test();
+        String rt = "";
+        for (Map<String,Object> map : list){
+            rt += map.get("name")+",";
+        }
+        log.info("========================================={}",rt);
+        outAddUserDto.setResult(rt);
         return outAddUserDto;
     }
 }

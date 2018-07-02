@@ -19,4 +19,12 @@ public interface TestClient {
      */
     @RequestMapping(value = "/sy/test",method = RequestMethod.GET)
     OutAddUserDto test() throws Exception;
+
+    /**
+     * test
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/sy/test2",method = RequestMethod.POST)
+    OutAddUserDto test2() throws Exception;
 }

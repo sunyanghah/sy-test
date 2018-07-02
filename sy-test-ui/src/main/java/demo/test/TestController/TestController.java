@@ -34,7 +34,11 @@ public class TestController {
     public OutAddUserDto addUser(@RequestBody InAddUserDto inAddUserDto) throws Exception{
         OutAddUserDto outAddUserDto;
 //        System.out.println("---------------"+inAddUserDto.getUserName()+"---------------"+inAddUserDto.getPassWord());
-        outAddUserDto = testClient.test();
+       if ("1".equals(inAddUserDto.getUserName())){
+           outAddUserDto = testClient.test();
+       }else {
+           outAddUserDto = testClient.test2();
+       }
         outAddUserDto.setResult(outAddUserDto.getResult());
         return outAddUserDto;
     }

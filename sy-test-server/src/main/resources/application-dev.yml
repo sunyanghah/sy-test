@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.104.19.240:3306/tp_xzh?useSSL=false&&characterEncoding=utf-8
-    username: smartcontent
-    password: QWE!@#ido85
+    url: jdbc:mysql://10.254.23.60:3306/test?useSSL=false&&characterEncoding=utf-8
+    username: root
+    password: 1234
 
 
 eureka:
