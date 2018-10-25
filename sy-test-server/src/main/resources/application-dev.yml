@@ -5,14 +5,14 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.254.23.60:3306/test?useSSL=false&&characterEncoding=utf-8
+    url: jdbc:mysql://47.94.159.51:3306/sytest?useSSL=false&&characterEncoding=utf-8
     username: root
-    password: 1234
+    password: 1qaz@wsx?Z
 
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.254.23.58:8761/eureka/
+      defaultZone: http://47.94.159.51:8761/eureka/
   instance:
     prefer-ip-address: true

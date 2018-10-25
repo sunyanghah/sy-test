@@ -41,12 +41,12 @@ public class TestController {
         log.info("=========================================in2=========");
         OutAddUserDto outAddUserDto = new OutAddUserDto();
         List<Map<String,Object>> list = testApplication.test();
-        String rt = "";
+        StringBuilder rt = new StringBuilder("");
         for (Map<String,Object> map : list){
-            rt += map.get("name")+",";
+            rt.append(map.get("name")).append(",");
         }
-        log.info("========================================={}",rt);
-        outAddUserDto.setResult(rt);
+        log.info("========================================={}",rt.toString());
+        outAddUserDto.setResult(rt.toString());
         return outAddUserDto;
     }
 }
